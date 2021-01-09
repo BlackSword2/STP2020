@@ -26,3 +26,51 @@
 2021-01-09 18:10:29,500 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:43]
 2021-01-09 18:15:24,488 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:43]
 2021-01-09 18:18:00,783 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:43]
+2021-01-09 19:35:20,051 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:43]
+2021-01-09 19:41:54,208 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:43]
+2021-01-09 19:57:37,860 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:45]
+2021-01-09 19:57:59,822 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:45]
+2021-01-09 20:00:46,579 ERROR: Exception on /reset_password_request [POST] [in c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\fred9\STP2020\project\app\routes.py", line 103, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\fred9\STP2020\project\app\email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\Users\fred9\STP2020\project\app\models.py", line 65, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-01-09 20:02:20,375 ERROR: Exception on /reset_password_request [POST] [in c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\fred9\stp2020\project\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\fred9\STP2020\project\app\routes.py", line 103, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\fred9\STP2020\project\app\email.py", line 20, in send_password_reset_email
+    token = user.get_reset_password_token()
+  File "C:\Users\fred9\STP2020\project\app\models.py", line 65, in get_reset_password_token
+    return jwt.encode(
+AttributeError: 'str' object has no attribute 'decode'
+2021-01-09 20:07:28,441 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:45]
+2021-01-09 20:08:32,825 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:45]
