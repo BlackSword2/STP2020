@@ -74,3 +74,7 @@ Traceback (most recent call last):
 AttributeError: 'str' object has no attribute 'decode'
 2021-01-09 20:07:28,441 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:45]
 2021-01-09 20:08:32,825 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:45]
+2021-01-09 20:34:38,722 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:47]
+2021-01-09 20:37:11,892 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:47]
+2021-01-09 20:45:43,257 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:47]
+2021-01-09 20:53:13,856 INFO: Microblog startup [in C:\Users\fred9\STP2020\project\app\__init__.py:49]
